@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blue">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="@string/app_name"
+        android:gravity="center_horizontal" />
+
+    <ToggleButton
+        android:id="@+id/Fan1"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textOff="Device Off"
+        android:textOn="Device On"
+        android:checked="false"
+        android:textColor="#F00"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:id="@+id/Fan2"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:textOff="Device Off"
+        android:textOn="Device On"
+        android:checked="false"
+        android:textColor="#F00"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="45dp"
+        android:id="@+id/plus_button1"
+        android:clickable="true"
+        android:textColor="#F00"
+        android:layout_alignTop="@+id/plus_button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Display"
+        android:layout_alignEnd="@+id/Display" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="45dp"
+        android:id="@+id/plus_button2"
+        android:clickable="true"
+        android:textColor="#F00"
+        android:layout_below="@+id/Fan2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/Fan2"
+        android:layout_alignStart="@+id/Fan2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Display"
+        android:text="0"
+        android:textSize="45dp"
+        android:layout_below="@+id/plus_button1"
+        android:layout_alignRight="@+id/Fan1"
+        android:layout_alignEnd="@+id/Fan1"
+        android:gravity="center_horizontal"
+        android:textColor="#F00"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Display1"
+        android:text="0"
+        android:textSize="45dp"
+        android:gravity="center_horizontal"
+        android:textColor="#F00"
+        android:layout_below="@+id/plus_button1"
+        android:layout_alignLeft="@+id/plus_button2"
+        android:layout_alignStart="@+id/plus_button2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="45dp"
+        android:id="@+id/minus_button1"
+        android:clickable="true"
+        android:layout_below="@+id/Display1"
+        android:layout_alignRight="@+id/Fan1"
+        android:layout_alignEnd="@+id/Fan1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#F00"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="45dp"
+        android:id="@+id/minus_button2"
+        android:clickable="true"
+        android:layout_below="@+id/Display"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#F00"
+        android:layout_alignLeft="@+id/plus_button2"
+        android:layout_alignStart="@+id/plus_button2" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Settable Profile OFF"
+        android:textOn="Settable Profile ON"
+        android:id="@+id/settable_Button"
+        android:checked="false"
+        android:textColor="#F00"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/minus_button1"
+        android:layout_alignRight="@+id/minus_button1"
+        android:layout_alignEnd="@+id/minus_button1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:gravity="center_horizontal"
+        android:textColor="#F00"
+        android:layout_below="@+id/settable_Button"
+        android:layout_alignRight="@+id/settable_Button"
+        android:layout_alignEnd="@+id/settable_Button" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Settable Profile OFF"
+        android:textOn="Settable Profile ON"
+        android:id="@+id/settable_Button1"
+        android:textColor="#F00"
+        android:layout_alignTop="@+id/settable_Button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/minus_button2"
+        android:layout_alignStart="@+id/minus_button2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:gravity="center_horizontal"
+        android:textColor="#F00"
+        android:layout_below="@+id/settable_Button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/settable_Button1"
+        android:layout_alignStart="@+id/settable_Button1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/spinner"
+        android:textColor="#F00"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner4"
+        android:gravity="center_horizontal"
+        android:textColor="#F00"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+</RelativeLayout>
